@@ -1,4 +1,5 @@
 #include <pebble.h>
+#include <stdlib.h>
   
 static Window *s_main_window;
 static TextLayer *s_time_layer;
@@ -94,7 +95,13 @@ static void main_window_unload(Window *window) {
 
 static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
   update_time();
-  update_Drinkmsg();
+  time_t temp = time(NULL); 
+  tick_time = localtime(&temp);
+  static char buf[] = "00";
+  strftime(buf, sizeof("00"), "%M", tick_time);
+  if((atoi(buf))%2 == 0) {
+     update_Drinkmsg();
+  }
 }
 
 /*static void tick_text_handler(struct tm *tick_time, TimeUnits units_changed) {
