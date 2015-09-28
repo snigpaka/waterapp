@@ -1,0 +1,30 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "aurorasnigdha@yahoo.com",
+    "longName": "Water app",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "fonts/perfect-dos-vga.ttf",
+                "name": "FONT_18",
+                "type": "font"
+            },
+            {
+                "file": "fonts/perfect-dos-vga.ttf",
+                "name": "FONT_35",
+                "type": "font"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Water app",
+    "uuid": "79141373-66e8-4fe1-bdb9-5e98651a0d11",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
