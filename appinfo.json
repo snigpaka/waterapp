@@ -22,6 +22,9 @@
     },
     "sdkVersion": "3",
     "shortName": "Water app",
+    "targetPlatforms": [
+        "basalt"
+    ],
     "uuid": "79141373-66e8-4fe1-bdb9-5e98651a0d11",
     "versionLabel": "1.0",
     "watchapp": {
